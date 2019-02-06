@@ -1,0 +1,25 @@
+git rebase b02
+
+git tag rel01 
+
+git tag tagname version 
+
+
+git grep "b01"
+
+git stash -p 
+git status -s 
+git stash pop 
+git revert HEAD	
+git reset
+git commit --amend
+git reset --hard version
+git clean -nfd
+git clean -f
+git clean -fd 
+git cherry-pick version
+git bisect start 
+git bisect good initial commit 
+git bisect bad 
+git bisect reset 
+git blame -L1,L18 index.html
