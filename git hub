@@ -1,0 +1,454 @@
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~
+$
+c
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~
+$ cd C:\Users\training_b3a.00.35\Desktop\git_06022019
+bash: cd: C:Userstraining_b3a.00.35Desktopgit_06022019: No such file or director                 y
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~
+$ pwd
+/c/Users/training_b3a.00.35
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~
+$ cd Desktop/git_06022019/
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019
+$ pwd
+/c/Users/training_b3a.00.35/Desktop/git_06022019
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019
+$ git clone https://github.com/Sadhana-Sahu/Repo1.git
+Cloning into 'Repo1'...
+remote: Enumerating objects: 30, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 30 (delta 8), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (30/30), done.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019
+$ cd Repo1
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git branch
+* master
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git branch --all
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/b01
+  remotes/origin/b02
+  remotes/origin/master
+  remotes/origin/patch-1
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git checkout b01
+Switched to a new branch 'b01'
+Branch 'b01' set up to track remote branch 'b01' from 'origin'.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ ls
+file1.txt  README.md
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git branch --all
+* b01
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/b01
+  remotes/origin/b02
+  remotes/origin/master
+  remotes/origin/patch-1
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git checkout b02
+Switched to a new branch 'b02'
+Branch 'b02' set up to track remote branch 'b02' from 'origin'.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b02)
+$ git branch --all
+  b01
+* b02
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/b01
+  remotes/origin/b02
+  remotes/origin/master
+  remotes/origin/patch-1
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b02)
+$ ls
+file0.txt  file1.txt  file2.txt  README.md
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b02)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git log
+commit bca3d8655d422d86e98545929e9682f21bbe74aa (HEAD -> master, origin/master, origin/HEAD)
+Merge: 0d6faf9 d90169a
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 12:10:05 2019 +0530
+
+    Merge pull request #4 from saththiya/patch-2
+
+    Create saththiya_testfile
+
+commit d90169a3f54b03557887f1997deed9431c7e5ba7
+Author: saththiya <saththiya92@gmail.com>
+Date:   Wed Feb 6 12:09:27 2019 +0530
+
+    Create saththiya_testfile
+
+commit 0d6faf9cbec16218a17cb6eadd45a2a4686e0fc4
+Merge: d49f34e e347f1c
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 11:32:53 2019 +0530
+
+    Merge pull request #3 from Sadhana-Sahu/b02
+
+    Create file0.txt
+
+commit e347f1cba806879ae3dccf8c8947724a7ade903c (origin/b02, b02)
+Merge: 28d5a48 d49f34e
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 11:32:39 2019 +0530
+
+    Merge branch 'master' into b02
+
+commit 28d5a481ee32f33e6928f0f209ff90b06ef70017
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 11:30:59 2019 +0530
+
+    Create file0.txt
+
+    by sadhana
+
+commit d49f34e673c51a54c347e489b50114f9674ed1d1
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git log --oneline
+bca3d86 (HEAD -> master, origin/master, origin/HEAD) Merge pull request #4 from saththiya/patch-2
+d90169a Create saththiya_testfile
+0d6faf9 Merge pull request #3 from Sadhana-Sahu/b02
+e347f1c (origin/b02, b02) Merge branch 'master' into b02
+28d5a48 Create file0.txt
+d49f34e Merge pull request #2 from Sadhana-Sahu/b02
+6976cfa Merge pull request #1 from Sadhana-Sahu/b01
+66ee627 Create file2.txt
+d8bfa91 (origin/b01, b01) create file1.txt by sadhana
+3fbccfb create file0.txt by sadhana
+f0fd597 Initial commit
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git log --oneline --graph
+*   bca3d86 (HEAD -> master, origin/master, origin/HEAD) Merge pull request #4 from saththiya/patch-2
+|\
+| * d90169a Create saththiya_testfile
+|/
+*   0d6faf9 Merge pull request #3 from Sadhana-Sahu/b02
+|\
+| *   e347f1c (origin/b02, b02) Merge branch 'master' into b02
+| |\
+| |/
+|/|
+* |   d49f34e Merge pull request #2 from Sadhana-Sahu/b02
+|\ \
+* \ \   6976cfa Merge pull request #1 from Sadhana-Sahu/b01
+|\ \ \
+| * | | d8bfa91 (origin/b01, b01) create file1.txt by sadhana
+* | | | 3fbccfb create file0.txt by sadhana
+|/ / /
+| | * 28d5a48 Create file0.txt
+| |/
+| * 66ee627 Create file2.txt
+|/
+* f0fd597 Initial commit
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ ^C
+
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git log --author="Sadhana"
+commit bca3d8655d422d86e98545929e9682f21bbe74aa (HEAD -> master, origin/master, origin/HEAD)
+Merge: 0d6faf9 d90169a
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 12:10:05 2019 +0530
+
+    Merge pull request #4 from saththiya/patch-2
+
+    Create saththiya_testfile
+
+commit 0d6faf9cbec16218a17cb6eadd45a2a4686e0fc4
+Merge: d49f34e e347f1c
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 11:32:53 2019 +0530
+
+    Merge pull request #3 from Sadhana-Sahu/b02
+
+    Create file0.txt
+
+commit e347f1cba806879ae3dccf8c8947724a7ade903c (origin/b02, b02)
+Merge: 28d5a48 d49f34e
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 11:32:39 2019 +0530
+
+    Merge branch 'master' into b02
+
+commit 28d5a481ee32f33e6928f0f209ff90b06ef70017
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 11:30:59 2019 +0530
+
+    Create file0.txt
+
+    by sadhana
+
+commit d49f34e673c51a54c347e489b50114f9674ed1d1
+Merge: 6976cfa 66ee627
+Author: Sadhana-Sahu <47377276+Sadhana-Sahu@users.noreply.github.com>
+Date:   Wed Feb 6 11:22:45 2019 +0530
+
+    Merge pull request #2 from Sadhana-Sahu/b02
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git log --before="15-Jan-2018"
+
+$ git log --after="15-Jan-2018"
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git checkout b01
+Switched to branch 'b01'
+Your branch is up to date with 'origin/b01'.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ cat > f1.txt
+this is f1.txt created in local b01 branch
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git status
+On branch b01
+Your branch is up to date with 'origin/b01'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git status
+On branch b01
+Your branch is up to date with 'origin/b01'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git add f1.txt
+warning: LF will be replaced by CRLF in f1.txt.
+The file will have its original line endings in your working directory.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git status
+On branch b01
+Your branch is up to date with 'origin/b01'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   f1.txt
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git commit -m "Added f1.txt"
+[b01 cb00f51] Added f1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1.txt
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git status
+On branch b01
+Your branch is ahead of 'origin/b01' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git push
+Username for 'https://github.com': Sadhana-Sahu
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 347 bytes | 173.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Sadhana-Sahu/Repo1.git
+   d8bfa91..cb00f51  b01 -> b01
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git config --global user.name "Sadhana-Sahu"
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git config --global user.email "sahu.sadhana66@gmail.com"
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git commit --amend --reset-author
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (b01)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ git merge b01
+git remote remove origin 
+git remote add origin url without initial commit 
+git push -u origin master 
+git push -u origin b01
+git push -u origin b02 
+git remote -v
+git remote add origin 
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo1 (master)
+$ cd ..
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019
+$ pwd
+/c/Users/training_b3a.00.35/Desktop/git_06022019
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019
+$ cd Repo2
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2
+$ git init
+Initialized empty Git repository in C:/Users/training_b3a.00.35/Desktop/git_06022019/Repo2/.git/
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git commit -m "initial commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        f1.txt
+
+nothing added to commit but untracked files present
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git add f1.txt
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git commit -m "initial_commit"
+[master (root-commit) db898c7] initial_commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1.txt
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git remote -v
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git remote add origin https://github.com/Sadhana-Sahu/Repo2.git
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git remote -v
+origin  https://github.com/Sadhana-Sahu/Repo2.git (fetch)
+origin  https://github.com/Sadhana-Sahu/Repo2.git (push)
+
+
+git push -u origin b01
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git branch b01
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git checkout b01
+Switched to branch 'b01'
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (b01)
+$  git push --set-upstream origin master
+
+Username for 'https://github.com': remote: Anonymous access to Sadhana-Sahu/Repo2.git denied.
+fatal: Authentication failed for 'https://github.com/Sadhana-Sahu/Repo2.git/'
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (b01)
+$ git push -u origin b01
+Username for 'https://github.com': Sadhana-Sahu
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 256 bytes | 128.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Sadhana-Sahu/Repo2.git
+ * [new branch]      b01 -> b01
+Branch 'b01' set up to track remote branch 'b01' from 'origin'.
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (b01)
+$ git push --set-upstream origin master
+Username for 'https://github.com': Sadhana-Sahu
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Sadhana-Sahu/Repo2/pull/new/master
+remote:
+To https://github.com/Sadhana-Sahu/Repo2.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+git push -u destination master 
+git remote remove destination origin1
+
+
+or create a new repository on the command line
+ 
+echo "# Repo2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Sadhana-Sahu/Repo2.git
+git push -u origin master
+…or push an existing repository from the command line
+ 
+git remote add origin https://github.com/Sadhana-Sahu/Repo2.git
+git push -u origin master
+
+git config --global alias.logog  ---> git log --oneline --graph
+
+
+git config --global alias.add-commit 'git ass-A && git commit'
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git config --global alias.logog 'log --oneline --graph'
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git logog
+* db898c7 (HEAD -> master, origin/master, origin/b01, b01) initial_commit
+
+training_b3a.00.35@BDC3-DX-519QSZS MINGW64 ~/Desktop/git_06022019/Repo2 (master)
+$ git checkout -b b02
+Switched to a new branch 'b02'
+
+
+git rebase b02
+
+git tag rel01 
+
+git tag tagname version 
+
+
+git grep "b01"
+
+
